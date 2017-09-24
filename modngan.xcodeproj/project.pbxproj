@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BC2E7551F5302DD006093CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */; };
+		1BC2E7571F530400006093CD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC2E7561F530400006093CD /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1BC2E7591F5307A8006093CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2E7581F5307A8006093CD /* LoginViewController.swift */; };
+		1BC2E75F1F53097A006093CD /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2E75E1F53097A006093CD /* RadiusButton.swift */; };
+		1BC2E7611F530EE1006093CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC2E7601F530EE1006093CD /* Assets.xcassets */; };
+		1BFA68651F6E5DC00075973B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA68641F6E5DC00075973B /* User.swift */; };
+		1E14BBC5896ECB00FE632CB5 /* Pods_modngan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C96A5A63C794F863B91E1C /* Pods_modngan.framework */; };
+		2218F1E21F150BE9005B9263 /* modnganTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218F1E11F150BE9005B9263 /* modnganTests.swift */; };
+		2218F1EA1F150CA6005B9263 /* testUserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218F1E91F150CA6005B9263 /* testUserLogin.swift */; };
+		22EF1FE61F07465500BD426A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF1FE51F07465500BD426A /* AppDelegate.swift */; };
+		22EF1FEB1F07465500BD426A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EF1FE91F07465500BD426A /* Main.storyboard */; };
+		22EF1FF01F07465500BD426A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EF1FEE1F07465500BD426A /* LaunchScreen.storyboard */; };
+		8ABCE44453D0772AA555DA2D /* Pods_modnganTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0875ED70D64C1607D685C2BC /* Pods_modnganTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2218F1E41F150BE9005B9263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22EF1FDA1F07465500BD426A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22EF1FE11F07465500BD426A;
+			remoteInfo = modngan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BB61CD300228BA2D9ACE15 /* Pods-modngan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modngan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-modngan/Pods-modngan.debug.xcconfig"; sourceTree = "<group>"; };
+		0875ED70D64C1607D685C2BC /* Pods_modnganTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modnganTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1BC2E7561F530400006093CD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1BC2E7581F5307A8006093CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1BC2E75E1F53097A006093CD /* RadiusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
+		1BC2E7601F530EE1006093CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BFA68641F6E5DC00075973B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2218F1DF1F150BE9005B9263 /* modnganTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modnganTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2218F1E11F150BE9005B9263 /* modnganTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modnganTests.swift; sourceTree = "<group>"; };
+		2218F1E31F150BE9005B9263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2218F1E91F150CA6005B9263 /* testUserLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testUserLogin.swift; sourceTree = "<group>"; };
+		22EF1FE21F07465500BD426A /* modngan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = modngan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EF1FE51F07465500BD426A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22EF1FEA1F07465500BD426A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22EF1FEF1F07465500BD426A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22EF1FF11F07465500BD426A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C96A5A63C794F863B91E1C /* Pods_modngan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modngan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58AB733972B71FD42D05EA8E /* Pods-modnganTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modnganTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-modnganTests/Pods-modnganTests.release.xcconfig"; sourceTree = "<group>"; };
+		C58C68BFDE3BFA767CABEC2C /* Pods-modngan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modngan.release.xcconfig"; path = "Pods/Target Support Files/Pods-modngan/Pods-modngan.release.xcconfig"; sourceTree = "<group>"; };
+		C95F9DC247A3EBBD48892DE0 /* Pods-modnganTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modnganTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-modnganTests/Pods-modnganTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2218F1DC1F150BE9005B9263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABCE44453D0772AA555DA2D /* Pods_modnganTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EF1FDF1F07465500BD426A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BC2E7571F530400006093CD /* AdSupport.framework in Frameworks */,
+				1E14BBC5896ECB00FE632CB5 /* Pods_modngan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BC2E75A1F5307C0006093CD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1BC2E7581F5307A8006093CD /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1BC2E75D1F530955006093CD /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				1BC2E75E1F53097A006093CD /* RadiusButton.swift */,
+			);
+			name = "Custom UI";
+			sourceTree = "<group>";
+		};
+		2218F1D91F150BB6005B9263 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BC2E75D1F530955006093CD /* Custom UI */,
+				1BC2E75A1F5307C0006093CD /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2218F1DA1F150BB6005B9263 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BFA68641F6E5DC00075973B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2218F1E01F150BE9005B9263 /* modnganTests */ = {
+			isa = PBXGroup;
+			children = (
+				2218F1E11F150BE9005B9263 /* modnganTests.swift */,
+				2218F1E91F150CA6005B9263 /* testUserLogin.swift */,
+				2218F1E31F150BE9005B9263 /* Info.plist */,
+			);
+			path = modnganTests;
+			sourceTree = "<group>";
+		};
+		22EF1FD91F07465500BD426A = {
+			isa = PBXGroup;
+			children = (
+				22EF1FE41F07465500BD426A /* modngan */,
+				2218F1E01F150BE9005B9263 /* modnganTests */,
+				22EF1FE31F07465500BD426A /* Products */,
+				3114BDDDB261EC56D0098DCD /* Pods */,
+				5BFFB97D2F798BA2866E0B2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22EF1FE31F07465500BD426A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22EF1FE21F07465500BD426A /* modngan.app */,
+				2218F1DF1F150BE9005B9263 /* modnganTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22EF1FE41F07465500BD426A /* modngan */ = {
+			isa = PBXGroup;
+			children = (
+				22EF1FE51F07465500BD426A /* AppDelegate.swift */,
+				2218F1DA1F150BB6005B9263 /* Model */,
+				2218F1D91F150BB6005B9263 /* Controller */,
+				22EF1FE91F07465500BD426A /* Main.storyboard */,
+				22EF1FEE1F07465500BD426A /* LaunchScreen.storyboard */,
+				1BC2E7601F530EE1006093CD /* Assets.xcassets */,
+				22EF1FF11F07465500BD426A /* Info.plist */,
+				1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */,
+			);
+			path = modngan;
+			sourceTree = "<group>";
+		};
+		3114BDDDB261EC56D0098DCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00BB61CD300228BA2D9ACE15 /* Pods-modngan.debug.xcconfig */,
+				C58C68BFDE3BFA767CABEC2C /* Pods-modngan.release.xcconfig */,
+				C95F9DC247A3EBBD48892DE0 /* Pods-modnganTests.debug.xcconfig */,
+				58AB733972B71FD42D05EA8E /* Pods-modnganTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5BFFB97D2F798BA2866E0B2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC2E7561F530400006093CD /* AdSupport.framework */,
+				39C96A5A63C794F863B91E1C /* Pods_modngan.framework */,
+				0875ED70D64C1607D685C2BC /* Pods_modnganTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2218F1DE1F150BE9005B9263 /* modnganTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2218F1E61F150BE9005B9263 /* Build configuration list for PBXNativeTarget "modnganTests" */;
+			buildPhases = (
+				B41F7ED7FBD4D9F1C96A5405 /* [CP] Check Pods Manifest.lock */,
+				2218F1DB1F150BE9005B9263 /* Sources */,
+				2218F1DC1F150BE9005B9263 /* Frameworks */,
+				2218F1DD1F150BE9005B9263 /* Resources */,
+				35C468173F6620BF4AC97AA6 /* [CP] Embed Pods Frameworks */,
+				75927305DABE541C7D74997F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2218F1E51F150BE9005B9263 /* PBXTargetDependency */,
+			);
+			name = modnganTests;
+			productName = modnganTests;
+			productReference = 2218F1DF1F150BE9005B9263 /* modnganTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22EF1FE11F07465500BD426A /* modngan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22EF1FF41F07465500BD426A /* Build configuration list for PBXNativeTarget "modngan" */;
+			buildPhases = (
+				0E65245D59AE739324EBEDBB /* [CP] Check Pods Manifest.lock */,
+				22EF1FDE1F07465500BD426A /* Sources */,
+				22EF1FDF1F07465500BD426A /* Frameworks */,
+				22EF1FE01F07465500BD426A /* Resources */,
+				468B76720C1C2829F3AB8F3F /* [CP] Embed Pods Frameworks */,
+				3992E504786F90FB4AC678CB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = modngan;
+			productName = modngan;
+			productReference = 22EF1FE21F07465500BD426A /* modngan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22EF1FDA1F07465500BD426A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Chakrit;
+				TargetAttributes = {
+					2218F1DE1F150BE9005B9263 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 723XZA35JD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22EF1FE11F07465500BD426A;
+					};
+					22EF1FE11F07465500BD426A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 723XZA35JD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 22EF1FDD1F07465500BD426A /* Build configuration list for PBXProject "modngan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22EF1FD91F07465500BD426A;
+			productRefGroup = 22EF1FE31F07465500BD426A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22EF1FE11F07465500BD426A /* modngan */,
+				2218F1DE1F150BE9005B9263 /* modnganTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2218F1DD1F150BE9005B9263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EF1FE01F07465500BD426A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22EF1FF01F07465500BD426A /* LaunchScreen.storyboard in Resources */,
+				1BC2E7551F5302DD006093CD /* GoogleService-Info.plist in Resources */,
+				1BC2E7611F530EE1006093CD /* Assets.xcassets in Resources */,
+				22EF1FEB1F07465500BD426A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E65245D59AE739324EBEDBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-modngan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35C468173F6620BF4AC97AA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-modnganTests/Pods-modnganTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3992E504786F90FB4AC678CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-modngan/Pods-modngan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		468B76720C1C2829F3AB8F3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-modngan/Pods-modngan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-modngan/Pods-modngan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75927305DABE541C7D74997F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-modnganTests/Pods-modnganTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B41F7ED7FBD4D9F1C96A5405 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-modnganTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2218F1DB1F150BE9005B9263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2218F1EA1F150CA6005B9263 /* testUserLogin.swift in Sources */,
+				2218F1E21F150BE9005B9263 /* modnganTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22EF1FDE1F07465500BD426A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFA68651F6E5DC00075973B /* User.swift in Sources */,
+				1BC2E7591F5307A8006093CD /* LoginViewController.swift in Sources */,
+				22EF1FE61F07465500BD426A /* AppDelegate.swift in Sources */,
+				1BC2E75F1F53097A006093CD /* RadiusButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2218F1E51F150BE9005B9263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22EF1FE11F07465500BD426A /* modngan */;
+			targetProxy = 2218F1E41F150BE9005B9263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22EF1FE91F07465500BD426A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EF1FEA1F07465500BD426A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22EF1FEE1F07465500BD426A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EF1FEF1F07465500BD426A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2218F1E71F150BE9005B9263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95F9DC247A3EBBD48892DE0 /* Pods-modnganTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 723XZA35JD;
+				INFOPLIST_FILE = modnganTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakrit.modnganTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/modngan.app/modngan";
+			};
+			name = Debug;
+		};
+		2218F1E81F150BE9005B9263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58AB733972B71FD42D05EA8E /* Pods-modnganTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 723XZA35JD;
+				INFOPLIST_FILE = modnganTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chakrit.modnganTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/modngan.app/modngan";
+			};
+			name = Release;
+		};
+		22EF1FF21F07465500BD426A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22EF1FF31F07465500BD426A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22EF1FF51F07465500BD426A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BB61CD300228BA2D9ACE15 /* Pods-modngan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 723XZA35JD;
+				INFOPLIST_FILE = modngan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.com1.modngan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22EF1FF61F07465500BD426A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58C68BFDE3BFA767CABEC2C /* Pods-modngan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 723XZA35JD;
+				INFOPLIST_FILE = modngan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.com1.modngan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2218F1E61F150BE9005B9263 /* Build configuration list for PBXNativeTarget "modnganTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2218F1E71F150BE9005B9263 /* Debug */,
+				2218F1E81F150BE9005B9263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EF1FDD1F07465500BD426A /* Build configuration list for PBXProject "modngan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EF1FF21F07465500BD426A /* Debug */,
+				22EF1FF31F07465500BD426A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22EF1FF41F07465500BD426A /* Build configuration list for PBXNativeTarget "modngan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22EF1FF51F07465500BD426A /* Debug */,
+				22EF1FF61F07465500BD426A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22EF1FDA1F07465500BD426A /* Project object */;
+}

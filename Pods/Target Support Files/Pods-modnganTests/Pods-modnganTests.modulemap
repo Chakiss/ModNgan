@@ -1,0 +1,6 @@
+framework module Pods_modnganTests {
+  umbrella header "Pods-modnganTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
