@@ -9,6 +9,7 @@
 import UIKit
 
 enum RadiusButtonStyle {
+    case Green
     case Blue
     case Red
     case Yellow
@@ -78,6 +79,10 @@ class RadiusButton: UIControl {
         self.layer.shadowPath = path.cgPath
         
         switch self.style {
+        case .Green:
+            print("Green")
+            self.backgroundColor = UIColor(red:0.00, green:0.78, blue:0.53, alpha:1.0)
+            self.layer.shadowColor = UIColor(red:0.00, green:0.78, blue:0.53, alpha:1.0).cgColor
         case .Blue:
             print("Blue")
             self.backgroundColor = UIColor(red: 0.00, green: 0.67, blue: 0.91, alpha: 1.0)

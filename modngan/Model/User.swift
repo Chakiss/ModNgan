@@ -6,8 +6,13 @@
 //  Copyright © 2017 Chakrit. All rights reserved.
 //
 
-import UIKit
+//import UIKit
+import RealmSwift
 
 class User: NSObject {
+    
+    @objc dynamic var id = 0
+    @objc dynamic var name = ""
+    
 
 }
