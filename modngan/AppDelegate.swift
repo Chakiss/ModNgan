@@ -25,6 +25,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        print("==========")
+       
+
+        if let user = Auth.auth().currentUser {
+            if let email = user.email {
+                print(email)
+            }
+            if let name = user.displayName {
+                print(name)
+            }
+        }
+        
+        
+        
+        
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                // user is signed in
+                // go to feature controller
+                print("User is signed in.")
+            } else {
+                // user is not signed in
+                // go to login controller
+                print("No user is signed in.")
+            }
+        }
+        
+        print("==========")
+        
         return true
     }
 
