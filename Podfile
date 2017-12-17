@@ -7,6 +7,8 @@ target 'modngan' do
   inhibit_all_warnings!
   # Pods for modngan
   
+  pod 'SwiftyJSON'
+  
   pod 'RealmSwift'
   
   pod 'Firebase/Core'

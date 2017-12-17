@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import Firebase
+import SwiftyJSON
 
 class SelectTypeViewController: UIViewController {
 
@@ -21,15 +24,45 @@ class SelectTypeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func employeeButtonTapped(_ sender: Any) {
+        
+        
+        FBSDKGraphRequest(graphPath:"me", parameters: ["fields":"id, email, first_name, last_name,gender, locale, timezone, picture, updated_time, verified"]).start(completionHandler: { (connection, result, error) in
+            if error == nil {
+                print("User Info : \(String(describing: result))")
+                let json = JSON(result!)
+                let db = Firestore.firestore()
+                
+                let user = Auth.auth().currentUser
+                if let user = user {
+                
+                    let uid = user.uid
+                    db.collection(employee).document(uid).setData([
+                        "first_name"    : json["first_name"].stringValue,
+                        "last_name"     : json["last_name"].stringValue,
+                        "gender"        : json["gender"].stringValue,
+                        "profile_image" : json["picture"]["data"]["url"].stringValue,
+                        "id"            : uid
+                        ])
+                    
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let entrepreneurListVC = storyboard.instantiateViewController(withIdentifier: "EntrepreneurListViewController") as! EntrepreneurListViewController
+                    self.present(entrepreneurListVC, animated: true, completion: nil)
+                    
+                }
+                
+                
+            } else {
+                print("Error Getting Info \(String(describing: error))");
+            }
+        })
+        
+        
+        
     }
-    */
-
+    
+    @IBAction func entrepreneurButtonTapped(_ sender: Any) {
+    }
+    
 }

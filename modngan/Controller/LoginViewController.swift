@@ -22,6 +22,7 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        /*
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
                 print("User is signed in.")
@@ -30,7 +31,7 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
                 self.present(selectTypeVC, animated: true, completion: nil)
             }
         }
-        
+        */
         
         
         
@@ -58,26 +59,16 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
     }
     
     
-    
-    /**
-     Sent to the delegate when the button was used to logout.
-     - Parameter loginButton: The button that was clicked.
-     */
+    func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {
+      
+        return true
+    }
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         
     }
-    
-    /**
-     Sent to the delegate when the button was used to login.
-     - Parameter loginButton: the sender
-     - Parameter result: The results of the login
-     - Parameter error: The error (if any) from the login
-     */
+
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error?) {
-        
         SVProgressHUD.show()
-        SVProgressHUD.setDefaultAnimationType(SVProgressHUDAnimationType.native)
-        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
         
         
         if let error = error {
@@ -89,8 +80,10 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
             print("cancel")
             return
         } else {
-            SVProgressHUD.dismiss()
+            
             let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+            
+          
             
             Auth.auth().signIn(with: credential) { (user, error) in
                 if let error = error {
@@ -99,28 +92,7 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
                     return
                 }
                 else {
-                    
-                    let db = Firestore.firestore()
-                    var ref: DocumentReference? = nil
-                    ref = db.collection("employee").document((user?.uid)!).setData(data: [
-                        "firstName": Auth.auth().currentUser!.uid,
-                        "lastName": "Lovelace",
-                        "id": user?.uid as Any
-                        ])
-                    
-                    ref = db.collection("employee").addDocument(data: [
-                        "firstName": Auth.auth().currentUser!.uid,
-                        "lastName": "Lovelace",
-                        "id": user?.uid as Any
-                    ]) { err in
-                        if let err = err {
-                            print("Error adding document: \(err)")
-                        } else {
-                            print("Document added with ID: \(ref!.documentID)")
-                        }
-                    }
- 
-                    
+                    SVProgressHUD.dismiss()
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let selectTypeVC = storyboard.instantiateViewController(withIdentifier: "SelectTypeViewController") as! SelectTypeViewController
                     self.present(selectTypeVC, animated: true, completion: nil)
@@ -133,7 +105,6 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
         
     }
 
-    
 }
 
 extension UIViewController {

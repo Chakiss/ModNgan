@@ -68,5 +68,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Application requires GPS to track your location</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Application requires GPS to track your location</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Application requires GPS to track your location</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app uses your location to allow communication with the Application Admin system</string>
+    
+    
 </dict>
 </plist>
