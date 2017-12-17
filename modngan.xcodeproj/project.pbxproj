@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1F71291FC145D9009E27EA /* CornerRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F71281FC145D9009E27EA /* CornerRadiusButton.swift */; };
 		1B4E48521F77547A00A6BE9E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E48511F77547A00A6BE9E /* SignUpViewController.swift */; };
 		1BC2E7551F5302DD006093CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */; };
 		1BC2E7571F530400006093CD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC2E7561F530400006093CD /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1BC2E7591F5307A8006093CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2E7581F5307A8006093CD /* LoginViewController.swift */; };
 		1BC2E75F1F53097A006093CD /* RadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2E75E1F53097A006093CD /* RadiusButton.swift */; };
 		1BC2E7611F530EE1006093CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC2E7601F530EE1006093CD /* Assets.xcassets */; };
+		1BC564961FC1480B00D0A460 /* SelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC564951FC1480B00D0A460 /* SelectTypeViewController.swift */; };
 		1BFA68651F6E5DC00075973B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFA68641F6E5DC00075973B /* User.swift */; };
 		1E14BBC5896ECB00FE632CB5 /* Pods_modngan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C96A5A63C794F863B91E1C /* Pods_modngan.framework */; };
 		2218F1E21F150BE9005B9263 /* modnganTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218F1E11F150BE9005B9263 /* modnganTests.swift */; };
@@ -36,12 +38,15 @@
 /* Begin PBXFileReference section */
 		00BB61CD300228BA2D9ACE15 /* Pods-modngan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modngan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-modngan/Pods-modngan.debug.xcconfig"; sourceTree = "<group>"; };
 		0875ED70D64C1607D685C2BC /* Pods_modnganTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modnganTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1F71281FC145D9009E27EA /* CornerRadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusButton.swift; sourceTree = "<group>"; };
 		1B4E48511F77547A00A6BE9E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1B7D48061FC1C29E003B99F6 /* modngan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "modngan-Bridging-Header.h"; sourceTree = "<group>"; };
 		1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1BC2E7561F530400006093CD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1BC2E7581F5307A8006093CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1BC2E75E1F53097A006093CD /* RadiusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusButton.swift; sourceTree = "<group>"; };
 		1BC2E7601F530EE1006093CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BC564951FC1480B00D0A460 /* SelectTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeViewController.swift; sourceTree = "<group>"; };
 		1BFA68641F6E5DC00075973B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2218F1DF1F150BE9005B9263 /* modnganTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = modnganTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2218F1E11F150BE9005B9263 /* modnganTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modnganTests.swift; sourceTree = "<group>"; };
@@ -79,11 +84,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1F71271FC14494009E27EA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		1B7D48031FC1BF89003B99F6 /* Support File */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Support File";
+			sourceTree = "<group>";
+		};
+		1B7D48051FC1C256003B99F6 /* BridgeHeader */ = {
+			isa = PBXGroup;
+			children = (
+				1B7D48061FC1C29E003B99F6 /* modngan-Bridging-Header.h */,
+			);
+			path = BridgeHeader;
+			sourceTree = "<group>";
+		};
 		1BC2E75A1F5307C0006093CD /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				1BC2E7581F5307A8006093CD /* LoginViewController.swift */,
 				1B4E48511F77547A00A6BE9E /* SignUpViewController.swift */,
+				1BC564951FC1480B00D0A460 /* SelectTypeViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -92,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				1BC2E75E1F53097A006093CD /* RadiusButton.swift */,
+				1B1F71281FC145D9009E27EA /* CornerRadiusButton.swift */,
 			);
 			name = "Custom UI";
 			sourceTree = "<group>";
@@ -100,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				1BC2E75D1F530955006093CD /* Custom UI */,
+				1B1F71271FC14494009E27EA /* New Group */,
 				1BC2E75A1F5307C0006093CD /* Login */,
 			);
 			path = Controller;
@@ -152,6 +182,8 @@
 				22EF1FE91F07465500BD426A /* Main.storyboard */,
 				22EF1FEE1F07465500BD426A /* LaunchScreen.storyboard */,
 				1BC2E7601F530EE1006093CD /* Assets.xcassets */,
+				1B7D48051FC1C256003B99F6 /* BridgeHeader */,
+				1B7D48031FC1BF89003B99F6 /* Support File */,
 				22EF1FF11F07465500BD426A /* Info.plist */,
 				1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */,
 			);
@@ -345,23 +377,39 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-modngan/Pods-modngan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +466,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1F71291FC145D9009E27EA /* CornerRadiusButton.swift in Sources */,
+				1BC564961FC1480B00D0A460 /* SelectTypeViewController.swift in Sources */,
 				1BFA68651F6E5DC00075973B /* User.swift in Sources */,
 				1BC2E7591F5307A8006093CD /* LoginViewController.swift in Sources */,
 				22EF1FE61F07465500BD426A /* AppDelegate.swift in Sources */,
@@ -535,11 +585,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "modngan/BridgeHeader/modngan-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -586,9 +637,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "modngan/BridgeHeader/modngan-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -607,6 +659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.com1.modngan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "modngan/BridgeHeader/modngan-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -624,6 +677,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.com1.modngan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "modngan/BridgeHeader/modngan-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};

@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKLoginKit
 import Firebase
+import SVProgressHUD
 
 class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
     
@@ -20,6 +21,20 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Auth.auth().addStateDidChangeListener() { auth, user in
+            if user != nil {
+                print("User is signed in.")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let selectTypeVC = storyboard.instantiateViewController(withIdentifier: "SelectTypeViewController") as! SelectTypeViewController
+                self.present(selectTypeVC, animated: true, completion: nil)
+            }
+        }
+        
+        
+        
+        
+      
         
         self.loginButton.style = .Green
         self.loginButton.title = "Login"
@@ -60,13 +75,21 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
      */
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error?) {
         
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultAnimationType(SVProgressHUDAnimationType.native)
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.black)
+        
+        
         if let error = error {
             print("error == \(error.localizedDescription)")
+            SVProgressHUD.dismiss()
             return
         } else if (result.isCancelled) {
+            SVProgressHUD.dismiss()
             print("cancel")
             return
         } else {
+            SVProgressHUD.dismiss()
             let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
             
             Auth.auth().signIn(with: credential) { (user, error) in
@@ -77,16 +100,30 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
                 }
                 else {
                     
-                    if let user = Auth.auth().currentUser {
+                    let db = Firestore.firestore()
+                    var ref: DocumentReference? = nil
+                    ref = db.collection("employee").document((user?.uid)!).setData(data: [
+                        "firstName": Auth.auth().currentUser!.uid,
+                        "lastName": "Lovelace",
+                        "id": user?.uid as Any
+                        ])
                     
-                        if let email = user.email {
-                            print(email)
+                    ref = db.collection("employee").addDocument(data: [
+                        "firstName": Auth.auth().currentUser!.uid,
+                        "lastName": "Lovelace",
+                        "id": user?.uid as Any
+                    ]) { err in
+                        if let err = err {
+                            print("Error adding document: \(err)")
+                        } else {
+                            print("Document added with ID: \(ref!.documentID)")
                         }
-                        if let photoURL = user.photoURL{
-                            print(photoURL)
-                        }
-                        
                     }
+ 
+                    
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let selectTypeVC = storyboard.instantiateViewController(withIdentifier: "SelectTypeViewController") as! SelectTypeViewController
+                    self.present(selectTypeVC, animated: true, completion: nil)
                 }
         
             }

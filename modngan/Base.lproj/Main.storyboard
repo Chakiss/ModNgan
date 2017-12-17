@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -111,10 +110,10 @@ privacy policy &amp; terms of service</string>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="101.19940029985008"/>
         </scene>
-        <!--View Controller-->
+        <!--Select Type View Controller-->
         <scene sceneID="guW-PK-Ol1">
             <objects>
-                <viewController id="StN-ob-PWJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectTypeViewController" id="StN-ob-PWJ" customClass="SelectTypeViewController" customModule="modngan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Tn-fp-vHA"/>
                         <viewControllerLayoutGuide type="bottom" id="DOp-E6-pNb"/>
@@ -129,34 +128,32 @@ privacy policy &amp; terms of service</string>
                                     <constraint firstAttribute="height" constant="172" id="2It-P0-AHk"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGy-XK-3RH">
-                                <rect key="frame" x="70" y="318" width="67" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGy-XK-3RH" customClass="CornerRadiusButton" customModule="modngan" customModuleProvider="target">
+                                <rect key="frame" x="70" y="318" width="91" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="1bP-wj-5yy"/>
-                                    <constraint firstAttribute="height" constant="70" id="NAg-0H-fDH"/>
-                                </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="หางาน"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVk-ke-YTK">
-                                <rect key="frame" x="234" y="318" width="67" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVk-ke-YTK" customClass="CornerRadiusButton" customModule="modngan" customModuleProvider="target">
+                                <rect key="frame" x="212" y="318" width="104" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="จ้างงาน">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jVk-ke-YTK" firstAttribute="leading" secondItem="MGy-XK-3RH" secondAttribute="trailing" constant="97" id="1ju-6j-wAX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jVk-ke-YTK" secondAttribute="trailing" constant="58" id="2GD-m0-NdR"/>
                             <constraint firstItem="1Sc-Jn-Dgz" firstAttribute="top" secondItem="4Tn-fp-vHA" secondAttribute="bottom" constant="25" id="9vn-hV-jsJ"/>
-                            <constraint firstItem="MGy-XK-3RH" firstAttribute="leading" secondItem="q54-rd-1Zu" secondAttribute="leadingMargin" constant="54" id="ODO-aj-hEC"/>
-                            <constraint firstItem="MGy-XK-3RH" firstAttribute="baseline" secondItem="jVk-ke-YTK" secondAttribute="firstBaseline" id="V5u-gc-2V9"/>
                             <constraint firstItem="1Sc-Jn-Dgz" firstAttribute="centerX" secondItem="q54-rd-1Zu" secondAttribute="centerX" id="bXk-Nc-dAK"/>
-                            <constraint firstItem="MGy-XK-3RH" firstAttribute="top" secondItem="jVk-ke-YTK" secondAttribute="top" id="k3H-fn-sNV"/>
-                            <constraint firstItem="DOp-E6-pNb" firstAttribute="top" secondItem="MGy-XK-3RH" secondAttribute="bottom" constant="279" id="lIF-Ob-DaF"/>
                         </constraints>
                     </view>
                 </viewController>
