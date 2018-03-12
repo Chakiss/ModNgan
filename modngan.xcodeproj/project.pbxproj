@@ -11,6 +11,7 @@
 		1B1242991FE6AFD20066F41E /* EntrepreneurListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1242981FE6AFD20066F41E /* EntrepreneurListViewController.swift */; };
 		1B12429B1FE6B9AD0066F41E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B12429A1FE6B9AD0066F41E /* CoreLocation.framework */; };
 		1B1F71291FC145D9009E27EA /* CornerRadiusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F71281FC145D9009E27EA /* CornerRadiusButton.swift */; };
+		1B3D82D32056C7CC007534BF /* EntrepreneurSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D82D22056C7CC007534BF /* EntrepreneurSignupViewController.swift */; };
 		1B4E48521F77547A00A6BE9E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E48511F77547A00A6BE9E /* SignUpViewController.swift */; };
 		1BC2E7551F5302DD006093CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */; };
 		1BC2E7571F530400006093CD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC2E7561F530400006093CD /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -45,6 +46,7 @@
 		1B1242981FE6AFD20066F41E /* EntrepreneurListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepreneurListViewController.swift; sourceTree = "<group>"; };
 		1B12429A1FE6B9AD0066F41E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1B1F71281FC145D9009E27EA /* CornerRadiusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusButton.swift; sourceTree = "<group>"; };
+		1B3D82D22056C7CC007534BF /* EntrepreneurSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrepreneurSignupViewController.swift; sourceTree = "<group>"; };
 		1B4E48511F77547A00A6BE9E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1B7D48061FC1C29E003B99F6 /* modngan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "modngan-Bridging-Header.h"; sourceTree = "<group>"; };
 		1BC2E7541F5302DD006093CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -91,11 +93,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B1F71271FC14494009E27EA /* New Group */ = {
+		1B3D82D12056C786007534BF /* Entrepreneur */ = {
 			isa = PBXGroup;
 			children = (
+				1B3D82D22056C7CC007534BF /* EntrepreneurSignupViewController.swift */,
 			);
-			name = "New Group";
+			name = Entrepreneur;
 			sourceTree = "<group>";
 		};
 		1B4BFFB81FE691E2006B6539 /* Employee */ = {
@@ -144,9 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				1BC2E75D1F530955006093CD /* Custom UI */,
-				1B1F71271FC14494009E27EA /* New Group */,
 				1BC2E75A1F5307C0006093CD /* Login */,
 				1B4BFFB81FE691E2006B6539 /* Employee */,
+				1B3D82D12056C786007534BF /* Entrepreneur */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				1B1242991FE6AFD20066F41E /* EntrepreneurListViewController.swift in Sources */,
 				1BFA68651F6E5DC00075973B /* User.swift in Sources */,
 				1BC2E7591F5307A8006093CD /* LoginViewController.swift in Sources */,
+				1B3D82D32056C7CC007534BF /* EntrepreneurSignupViewController.swift in Sources */,
 				22EF1FE61F07465500BD426A /* AppDelegate.swift in Sources */,
 				1BC2E75F1F53097A006093CD /* RadiusButton.swift in Sources */,
 				1B4E48521F77547A00A6BE9E /* SignUpViewController.swift in Sources */,
