@@ -65,7 +65,7 @@ class SelectTypeViewController: UIViewController {
     @IBAction func entrepreneurButtonTapped(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let entrepreneurSignUpVC = storyboard.instantiateViewController(withIdentifier: "EntrepreneurSignupViewController") as! EntrepreneurListViewController
+        let entrepreneurSignUpVC = storyboard.instantiateViewController(withIdentifier: "EntrepreneurSignupViewController") as! EntrepreneurSignupViewController
         self.present(entrepreneurSignUpVC, animated: true, completion: nil)
     }
     

@@ -295,7 +295,7 @@
 					};
 					22EF1FE11F07465500BD426A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 723XZA35JD;
+						DevelopmentTeam = Z8A8UMYRZ6;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -679,10 +679,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 723XZA35JD;
+				DEVELOPMENT_TEAM = Z8A8UMYRZ6;
 				INFOPLIST_FILE = modngan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.com1.modngan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qoofhouse.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "modngan/BridgeHeader/modngan-Bridging-Header.h";
@@ -697,10 +697,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 723XZA35JD;
+				DEVELOPMENT_TEAM = Z8A8UMYRZ6;
 				INFOPLIST_FILE = modngan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.com1.modngan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qoofhouse.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "modngan/BridgeHeader/modngan-Bridging-Header.h";
