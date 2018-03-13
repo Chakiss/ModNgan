@@ -10,6 +10,9 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
+import RealmSwift
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,20 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        self.checkFacebookUser()
         
-        
-        let userDefaults = UserDefaults.standard
-        if userDefaults.value(forKey: "appFirstTimeOpen") == nil {
-            userDefaults.setValue(true, forKey: "appFirstTimeOpend")
-            // signOut from FIRAuth
-            do {
-                try Auth.auth().signOut()
-                FBSDKLoginManager().logOut()
-            }catch {
-                
-            }
-        
-        }
+        self.checkUserLogin()
         
         return true
     }
@@ -70,6 +62,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func checkFacebookUser() {
+        
+        let userDefaults = UserDefaults.standard
+        if userDefaults.value(forKey: "appFirstTimeOpen") == nil {
+            userDefaults.setValue(true, forKey: "appFirstTimeOpend")
+            // signOut from FIRAuth
+            do {
+                try Auth.auth().signOut()
+                FBSDKLoginManager().logOut()
+            }catch {
+                
+            }
+        }
+    }
+    
+    
+    func checkUserLogin() {
+        
+        let realm = try! Realm()
+        let users: Results = realm.objects(User.self)
+        let user: User = users.first
+        if user.isLogin{
+            
+        } else {
+            
+        }
+        
+    }
+    
 }
 

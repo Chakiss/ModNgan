@@ -272,7 +272,7 @@ privacy policy &amp; terms of service</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTI-pI-owW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229" y="896"/>
+            <point key="canvasLocation" x="2663" y="896"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0bH-Oj-VnP">
@@ -292,7 +292,7 @@ privacy policy &amp; terms of service</string>
             </objects>
             <point key="canvasLocation" x="1649" y="896"/>
         </scene>
-        <!--Entrepreneur Signup View Controller-->
+        <!--TEST-->
         <scene sceneID="nuD-9C-lk0">
             <objects>
                 <viewController storyboardIdentifier="EntrepreneurSignupViewController" id="2gB-ZY-ter" customClass="EntrepreneurSignupViewController" customModule="modngan" customModuleProvider="target" sceneMemberID="viewController">
@@ -303,22 +303,13 @@ privacy policy &amp; terms of service</string>
                     <view key="view" contentMode="scaleToFill" id="8M6-mb-o7o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="แสดงรายชื่อผู้ประกอบการ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZE-C6-btP">
-                                <rect key="frame" x="70" y="68" width="234" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="j4o-5c-loW"/>
+                    <navigationItem key="navigationItem" title="TEST" id="j4o-5c-loW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6P-pK-vQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229" y="1739"/>
+            <point key="canvasLocation" x="2663" y="1738"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wcm-Yf-zT2">

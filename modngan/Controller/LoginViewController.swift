@@ -10,6 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import Firebase
 import SVProgressHUD
+import RealmSwift
 
 class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
     
@@ -92,6 +93,15 @@ class LoginViewController: UIViewController , FBSDKLoginButtonDelegate {
                     return
                 }
                 else {
+                    let realm = try! Realm()
+                    
+                    let user = User()
+                    user.name = ""
+                    user.isLogin = true
+                    try! realm.write {
+                        realm.add(user)
+                    }
+                    
                     SVProgressHUD.dismiss()
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let selectTypeVC = storyboard.instantiateViewController(withIdentifier: "SelectTypeViewController") as! SelectTypeViewController

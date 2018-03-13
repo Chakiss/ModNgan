@@ -6,13 +6,14 @@
 //  Copyright © 2017 Chakrit. All rights reserved.
 //
 
-//import UIKit
+
 import RealmSwift
 
-class User: NSObject {
+class User: Object {
     
     @objc dynamic var id = 0
     @objc dynamic var name = ""
     @objc dynamic var isLogin = false
+    @objc dynamic var type = false
     
 }
